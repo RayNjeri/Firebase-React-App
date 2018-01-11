@@ -1,5 +1,6 @@
 import React from 'react';
 import mui from 'material-ui';
+import MessageList from './MessageList.jsx';
 
 
 var ThemeManager = new mui.Styles.ThemeManager();
@@ -34,6 +35,7 @@ class App extends React.Component {
     return (
       <div>
         <AppBar title="Awesome Chat App" />
+        <MessageList />
       </div>
     );
   }

@@ -1,13 +1,17 @@
 import React from 'react';
+import mui from 'material-ui';
+
+var { ListItem, Avatar } = mui;
 
 class Message extends React.Component {
     constructor(props) {
         super(props);
     }
     render() {
-        return (
-            <div>{this.props.Message}</div>
-        )
+      return (
+      <ListItem
+          leftAvatar={<Avatar src= "https://pixabay.com/en/avatar-cartoon-eyes-female-funny-2026510/"/>}> { this.props.message }</ListItem >
+        );
     }
 }
 
