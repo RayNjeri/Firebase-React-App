@@ -21,7 +21,10 @@ class MessageList extends React.Component {
       );
     });
     return (
-      <card>
+      <card style={{
+        flexGrow: 2,
+        marginLeft: 30
+      }}>
         <list>{messageNodes}</list>
       </card>
     )
