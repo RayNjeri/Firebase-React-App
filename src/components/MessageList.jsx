@@ -1,4 +1,5 @@
 import React from 'react';
+import Message from './Message.jsx';
 
 class MessageList extends React.Component {
     constructor(props) {
@@ -13,7 +14,7 @@ class MessageList extends React.Component {
   render() {
     var messageNodes = this.state.messages.map((message) => {
       return (
-        <div>{message}</div>
+        <Message message={message} />
       );
     });
     return (
