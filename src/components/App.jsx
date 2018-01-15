@@ -2,6 +2,7 @@ import React from 'react';
 import mui from 'material-ui';
 import MessageList from './MessageList.jsx';
 import ChannelList from './ChannelList.jsx';
+import MessageBox from './MessageBox.jsx';
 
 
 var ThemeManager = new mui.Styles.ThemeManager();
@@ -46,6 +47,7 @@ class App extends React.Component {
           <MessageList />
           <ChannelList />
         </div>
+        <MessageBox />
       </div>
       
     );
